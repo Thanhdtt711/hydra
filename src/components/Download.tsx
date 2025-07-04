@@ -73,14 +73,22 @@ const Download = () => {
                 <div className="space-y-2 md:space-y-3">
                   {platform.buttons.map((button, buttonIndex) => (
                     <Button 
-                      key={buttonIndex}
-                      variant="outline" 
-                      className="w-full border-border hover:bg-green-600 text-sm md:text-base py-2 md:py-3"
+                    key={buttonIndex}
+                    variant="outline" 
+                    className="w-full border-border hover:bg-green-600 text-sm md:text-base py-2 md:py-3 opacity-70 relative group"
+                    title="Coming soon"
+                  >
+                    <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 hidden group-hover:block bg-black text-white text-xs px-2 py-1 rounded shadow-md z-10">
+                      Coming soon
+                    </div>
+                    <button.icon className="w-3 h-3 md:w-4 md:h-4 mr-2" />
+                    {button.name}  
+                    <span 
+                      className="text-xs px-3 pb-1 rounded-full text-white font-medium bg-red-500"
                     >
-                      <button.icon className="w-3 h-3 md:w-4 md:h-4 mr-2" />
-                      {button.name}  
-                      <span data-lov-id="src\components\Features.tsx:226:26" data-lov-name="span" data-component-path="src\components\Features.tsx" data-component-line="226" data-component-file="Features.tsx" data-component-name="span" data-component-content="%7B%7D" className="text-xs px-3 py-1 rounded-full text-white font-medium bg-blue-500">Coming Soon</span>
-                    </Button>
+                      soon
+                    </span>
+                  </Button>
                   ))}
                 </div>
               ) : (

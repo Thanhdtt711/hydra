@@ -131,7 +131,7 @@ const translations = {
 
     // Download
     downloadTitle: 'Tải xuống Hydra Wallet',
-    downloadSubtitle: 'Chọn nền tảng phù hợp với bạn và bắt đầu hành trình khám phá thế giới crypto đa chuỗi',
+    downloadSubtitle: 'Chọn nền tảng phù hợp với bạn và bắt đầu hành trình khám phá thế giới crypto',
     multiPlatformReady: 'Multi-Platform Ready',
 
     // Platform names
@@ -284,7 +284,7 @@ const translations = {
 
     // Download
     downloadTitle: 'Download Hydra Wallet',
-    downloadSubtitle: 'Choose the platform that suits you and start your journey exploring the multi-chain crypto world',
+    downloadSubtitle: 'Choose the platform that suits you and start your journey into the world of crypto.',
     multiPlatformReady: 'Multi-Platform Ready',
 
     // Platform names
