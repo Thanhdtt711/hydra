@@ -9,7 +9,13 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 const Features = () => {
   const { t } = useTranslation();
-
+  const getImageUrl = (imageName) => {
+    try {
+      return new URL(`/src/assets/${imageName}`, import.meta.url).href;
+    } catch {
+      return `/images/${imageName}`; // fallback path
+    }
+  };
   const features = [
     {
       icon: Zap,
@@ -48,49 +54,49 @@ const Features = () => {
       name: t('gamesSection.rockPaperScissors.name'),
       status: t('gamesSection.rockPaperScissors.status'),
       color: "bg-green-500",
-      icon: "/src/assets/Rock Paper Scissors.jpg"
+      icon: getImageUrl('Rock Paper Scissors.jpg')
     },
     {
       name: t('gamesSection.pokerZ.name'),
       status: t('gamesSection.pokerZ.status'),
       color: "bg-yellow-500",
-      icon: "/src/assets/PockerZ.png"
+      icon: getImageUrl('PockerZ.png')
     },
     {
       name: t('gamesSection.snakeGame.name'),
       status: t('gamesSection.snakeGame.status'),
       color: "bg-blue-500",
-      icon: "/src/assets/Snake Game.jpg"
+      icon: getImageUrl('Snake Game.jpg')
     },
     {
       name: t('gamesSection.blackjack.name'),
       status: t('gamesSection.blackjack.status'),
       color: "bg-green-500",
-      icon: "/src/assets/BlackJack.jpg"
+      icon: getImageUrl('BlackJack.jpg')
     },
     {
       name: t('gamesSection.diceWars.name'),
       status: t('gamesSection.diceWars.status'),
       color: "bg-yellow-500",
-      icon: "/src/assets/JackPot - Big Win.jpg"
+      icon: getImageUrl('JackPot - Big Win.jpg')
     },
     {
       name: t('gamesSection.cryptoRacer.name'),
       status: t('gamesSection.cryptoRacer.status'),
       color: "bg-purple-500",
-      icon: "/src/assets/Mountain Climb.webp"
+      icon: getImageUrl('Mountain Climb.webp')
     },
     {
       name: t('gamesSection.towerDefense.name'),
       status: t('gamesSection.towerDefense.status'),
       color: "bg-green-500",
-      icon: "/src/assets/Jackal Squad.webp"
+      icon: getImageUrl('Jackal Squad.webp')
     },
     {
       name: t('gamesSection.cardMaster.name'),
       status: t('gamesSection.cardMaster.status'),
       color: "bg-orange-500",
-      icon: "/src/assets/Cat Shooter.webp"
+      icon: getImageUrl('Cat Shooter.webp')
     }
   ];
 
