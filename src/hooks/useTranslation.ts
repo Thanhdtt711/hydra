@@ -152,7 +152,7 @@ const translations = {
     openWebDashboard: 'Mở Web Dashboard',
 
     // Trust indicator
-    trustedUsers: 'Hơn 2 triệu người dùng tin tướng',
+    trustedUsers: 'Mục tiêu là giành được sự tin tưởng của 100.000 người dùng.',
     worldwide: 'Trên toàn thế giới',
 
     // Footer
@@ -305,7 +305,7 @@ const translations = {
     openWebDashboard: 'Open Web Dashboard',
 
     // Trust indicator
-    trustedUsers: 'Over 2 million users trust us',
+    trustedUsers: 'The goal is to earn the trust of 100,000 users.',
     worldwide: 'Worldwide',
 
     // Footer
